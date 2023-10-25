@@ -8,11 +8,34 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.job-main-container{
+  position:absolute;
+  left:5%;
+  top:72%
+}
+
+.job-container{
+  width: 31%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.offices-container{
+  margin-top:700px;
+  width:80%;
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fiverr-way-container{
+  width: 31%;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
