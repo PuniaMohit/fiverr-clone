@@ -1,113 +1,196 @@
-import Image from 'next/image'
+import Image from "next/image";
+import homePageBanner from "./assets/images/homepage-banner.webp";
+import homePageImageTwo from "./assets/images/homepageimagetwo.webp";
+import homePageImageThree from "./assets/images/homepagethree.webp";
+import homePageImageFour from "./assets/images/homepagefour.webp";
+import fiverrWayImageOne from "./assets/images/fiverrwayimageone.webp";
+import fiverrWayImageTwo from "./assets/images/fiverrwayimagetwo.webp";
+import fiverrWayImageThree from "./assets/images/fiverrwayimagethree.webp";
+import fiverrWayImageFour from "./assets/images/fiverrwayimagefour.webp";
+import fiverrWayImageFive from "./assets/images/fiverrwayimagefive.webp";
+import fiverrWayImageSix from "./assets/images/fiverrwayimagesix.webp";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className="relative">
+        <Image src={homePageBanner} />
+        <div className="absolute top-20 left-5">
+          <div className="font-bold text-4xl text-white mb-5">
+            We make the <br></br>future of <br></br>work,{" "}
+            <span className="text-yellow-700">work</span>
+          </div>
+          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            Find Your Next Job
+          </button>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="my-10 text-center">
+        <div className="font-bold text-4xl mb-5">why we're here</div>
+        <div>
+          We create opportunity for anyone in the world to build <br />
+          their business, brand, or dream.
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="w-11/12 mx-auto">
+        <Image src={homePageImageTwo} />
       </div>
-    </main>
-  )
+      <div className="relative">
+        <div className="font-semibold text-center bg-emerald-100 pt-5 pb-40 text-5xl">
+          We'are a big team,
+          <br />
+          comprised of pretty <br />
+          small teams, powered <br />
+          by <span>unique minds</span>
+        </div>
+        <div className="flex flex-wrap gap-8 mx-auto w-11/12 job-main-container">
+          <div className="p-5 job-container rounded">
+            <div className="font-semibold text-xl">Technology</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">16 openings</div>
+            <div>
+              Perfecting the platform and applications with cutting-edge
+              technologies.
+            </div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Product</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div>Make an impact on the way the world works together.</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Data</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div>The launchpad for successful data careers</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Design</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div>Cultivate your creative career on a global stage</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Marketing</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div>Living and breathing the Fiverr brand</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Business</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">0 openings</div>
+            <div>
+              Leading global expansion to level the professional playing field
+            </div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">
+              Customer Care and Trust & Safety
+            </div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div>The front line of consumer experience</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">
+              Legal, HR and Operations
+            </div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div>The backbone of Fiverr's culture</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Finance</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div>Bills, Budgets, Balances and Beyond</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Sales</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div>Recognize opportunities to widen Fiverr's impact</div>
+          </div>
+          <div className="p-5 bg-white job-container">
+            <div className="font-semibold text-xl">Cyber, IT and MIS</div>
+            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div>Make an impact through cutting edge technology</div>
+          </div>
+        </div>
+      </div>
+      <div className="offices-container">
+        <div className="w-2/5">
+          <div className="font-bold text-3xl">Our offices</div>
+          <div className="my-5">
+            We’re all about providing a conducive environment so that everyone
+            can learn, thrive, and be the best version of themselves. All of our
+            locations showcase items made by Fiverr sellers. Explore some of our
+            offices here.
+          </div>
+          <div className="flex gap-12">
+            <div className="leading-10 font-semibold">
+              <div>Tel Aviv</div>
+              <div>Berlin</div>
+              <div>Kyiv</div>
+              <div>New York</div>
+            </div>
+            <div className="leading-10 font-semibold">
+              <div>London</div>
+              <div>Orlando</div>
+              <div>San Francisco</div>
+              <div>Phoenix</div>
+            </div>
+            <div className="leading-10 font-semibold">
+              <div>Sydney</div>
+              <div>Seattle</div>
+              <div>US, Remote</div>
+              <div>Poland</div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between w-1/2 relative">
+          <div>
+            <Image src={homePageImageThree} width={250} />
+          </div>
+          <div>
+            <Image src={homePageImageFour} width={250} />
+          </div>
+          <faEye />
+        </div>
+      </div>
+      <div>
+        <div className="my-16 font-bold text-4xl text-center">The Fiverr Way</div>
+        <div className="flex flex-wrap w-4/5 mx-auto gap-4">
+          <div className="fiverr-way-container">
+            <Image src={fiverrWayImageOne} width={100}/>
+            <div className="my-5 font-bold text-xl">Quality</div>
+            <div>We challange ourselves and teams to aim higher</div>
+          </div>
+          <div className="fiverr-way-container">
+            <Image  src={fiverrWayImageTwo} width={80}/>
+            <div className="my-5 font-bold text-xl">Quality</div>
+            <div>We challange ourselves and teams to aim higher</div>
+          </div><div className="fiverr-way-container">
+            <Image  src={fiverrWayImageThree} width={80}/>
+            <div className="my-5 font-bold text-xl">Quality</div>
+            <div>We challange ourselves and teams to aim higher</div>
+          </div><div className="fiverr-way-container">
+            <Image  src={fiverrWayImageFour} width={70}/>
+            <div className="my-5 font-bold text-xl">Quality</div>
+            <div>We challange ourselves and teams to aim higher</div>
+          </div><div className="fiverr-way-container">
+            <Image  src={fiverrWayImageFive} width={100}/>
+            <div className="my-5 font-bold text-xl">Quality</div>
+            <div>We challange ourselves and teams to aim higher</div>
+          </div><div className="fiverr-way-container">
+            <Image  src={fiverrWayImageSix} width={100}/>
+            <div className="my-5 font-bold text-xl">Quality</div>
+            <div>We challange ourselves and teams to aim higher</div>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-4 gap-4">
+           <div><Image/></div>
+           <div><Image/></div>
+           <div><Image/></div>
+           <div><Image/></div>
+           <div><Image/></div>
+           <div><Image/></div>
+      </div>
+    </div>
+  );
 }
