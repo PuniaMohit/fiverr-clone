@@ -1,10 +1,9 @@
 import Image from "next/image";
 import headerItems from "./json-data/headerItems.json";
 import Link from "next/link";
-import fiverr from "./assets/images/pngegg.png";
+import { fiverr } from "./common/images";
 
 const Header = () => {
-  console.log(headerItems);
   return (
     <div className="sticky top-0 bg-white z-10">
       <div className="flex justify-between sticky top-0 items-center mx-auto w-4/5 py-4">
