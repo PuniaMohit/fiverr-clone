@@ -9,6 +9,18 @@ import fiverrWayImageThree from "../assets/images/fiverrwayimagethree.webp";
 import fiverrWayImageFour from "../assets/images/fiverrwayimagefour.webp";
 import fiverrWayImageFive from "../assets/images/fiverrwayimagefive.webp";
 import fiverrWayImageSix from "../assets/images/fiverrwayimagesix.webp";
+import gridImageOne from "../assets/images/gridimageone.webp";
+import gridImageTwo from "../assets/images/gridimagetwo.jpg";
+import gridImageThree from "../assets/images/gridimagethree.webp";
+import gridImageFour from "../assets/images/gridimagefour.webp";
+import gridImageFive from "../assets/images/gridimagefive.webp";
+import gridImageSix from "../assets/images/gridimagesix.webp";
+import gridImageSeven from "../assets/images/gridimageseven.webp";
+import reviewImage from "../assets/images/reviewImage.webp";
+import moreAboutFiverrImageOne from "../assets/images/moreAboutFiverrImageOne.webp";
+import moreAboutFiverrImageTwo from "../assets/images/moreAboutFiverrImageTwo.webp";
+import moreAboutFiverrImageThree from "../assets/images/moreAboutFiverrImageThree.webp";
+import moreAboutFiverrImageFour from "../assets/images/moreAboutFiverrImageFour.webp";
 export {
   fiverr,
   homePageBanner,
@@ -21,4 +33,16 @@ export {
   fiverrWayImageFour,
   fiverrWayImageFive,
   fiverrWayImageSix,
+  gridImageOne,
+  gridImageTwo,
+  gridImageThree,
+  gridImageFour,
+  gridImageFive,
+  gridImageSix,
+  gridImageSeven,
+  reviewImage,
+  moreAboutFiverrImageOne,
+  moreAboutFiverrImageTwo,
+  moreAboutFiverrImageThree,
+  moreAboutFiverrImageFour,
 };

@@ -10,19 +10,92 @@ import {
   fiverrWayImageFour,
   fiverrWayImageFive,
   fiverrWayImageSix,
+  gridImageOne,
+  gridImageTwo,
+  gridImageThree,
+  gridImageFour,
+  gridImageFive,
+  gridImageSix,
+  gridImageSeven,
+  reviewImage,
+  moreAboutFiverrImageOne,
+  moreAboutFiverrImageTwo,
+  moreAboutFiverrImageThree,
+  moreAboutFiverrImageFour,
 } from "./common/images";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons"; it may be used later
+
+const fiverrWayContent = [
+  {
+    src: fiverrWayImageOne,
+    title: "Quality",
+    width: 100,
+    content: "We challenge ourselves and our teams to aim higher.",
+  },
+  {
+    src: fiverrWayImageTwo,
+    title: "Data rules",
+    width: 80,
+    content: "Data wins every argument. There’s data to support this.",
+  },
+  {
+    src: fiverrWayImageThree,
+    title: "Stay humble",
+    width: 80,
+    content: "We always check our ego at the door.",
+  },
+  {
+    src: fiverrWayImageFour,
+    title: "Celebrate",
+    width: 70,
+    content: "When we win, we take a moment to celebrate.",
+  },
+  {
+    src: fiverrWayImageFive,
+    title: "Our principles",
+    width: 100,
+    content: "Anyone can suggest new principles or challenge existing ones.",
+  },
+  {
+    src: fiverrWayImageSix,
+    title: "Speed matters",
+    width: 100,
+    content: "Moving quickly allows us to test things, learn, and iterate.",
+  },
+];
+
+const moreAboutFiverrContent = [
+  {
+    src: moreAboutFiverrImageOne,
+    language: "English",
+    content: "Team Up - Our 2022 Brand Campaign ",
+  },
+  {
+    src: moreAboutFiverrImageTwo,
+    language: "Hebrew",
+    content: "An Ordinary Day at Fiverr’s HQ",
+  },
+  {
+    src: moreAboutFiverrImageThree,
+    language: "English",
+    content: "Turn Nothing into Something - Our 2021 Brand Campaign",
+  },
+  {
+    src: moreAboutFiverrImageFour,
+    language: "English",
+    content: "How Fiverr Works",
+  },
+];
 
 export default function HomePage() {
   return (
     <div>
       <div className="relative">
-        <Image src={homePageBanner} alt="homePageBanner" />
-        <div className="absolute top-20 left-5">
-          <div className="font-bold text-4xl text-white mb-5">
-            We make the <br></br>future of <br></br>work,
-            <span className="text-yellow-700">work</span>
+        <Image src={homePageBanner} alt="homePageBanner" height={1000} />
+        <div className="absolute top-28 left-20">
+          <div className="font-bold text-6xl text-white mb-10">
+            We make <br />
+            the future of <br></br>work,
+            <span className="text-yellow-400 italic font-mono"> work</span>
           </div>
           <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
             Find Your Next Job
@@ -159,39 +232,68 @@ export default function HomePage() {
           The Fiverr Way
         </div>
         <div className="flex flex-wrap w-4/5 mx-auto gap-4">
-          <div className="fiverr-way-container">
-            <Image src={fiverrWayImageOne} width={100} />
-            <div className="my-5 font-bold text-xl">Quality</div>
-            <div>We challange ourselves and teams to aim higher</div>
+          {fiverrWayContent.map((items) => (
+            <div className="fiverr-way-container">
+              <Image src={items.src} width={items.width} />
+              <div className="my-5 font-bold text-xl">{items.title}</div>
+              <div>{items.content}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="grid grid-cols-4 gap-4 mt-24">
+        <div>
+          <Image src={gridImageOne} />
+        </div>
+        <div className="col-span-2">
+          <Image src={gridImageTwo} />
+        </div>
+        <div>
+          <Image src={gridImageThree} />
+        </div>
+        <div>
+          <Image src={gridImageFour} />
+        </div>
+        <div>
+          <Image src={gridImageFive} />
+        </div>
+        <div>
+          <Image src={gridImageSix} />
+        </div>
+        <div>
+          <Image src={gridImageSeven} />
+        </div>
+      </div>
+      <div className="flex gap-40 w-11/12 justify-between mx-auto mt-24 items-center">
+        <div className="">
+          <Image src={reviewImage} width={550} />
+        </div>
+        <div className="w-1/2 mt-4">
+          <div className="font-semibold text-2xl leading-10">
+            After almost a decade with Fiverr, it's getting hard to separate my
+            own story from the Fiverr story. I am known as Netta from Fiverr, I
+            give my Fiverr email when I'm asked to provide an email address, my
+            emergency contact is a friend I met at Fiverr, and I'm often told
+            thatthe Fiverr offices look just like my own living room.
           </div>
-          <div className="fiverr-way-container">
-            <Image src={fiverrWayImageTwo} width={80} />
-            <div className="my-5 font-bold text-xl">Quality</div>
-            <div>We challange ourselves and teams to aim higher</div>
-          </div>
-          <div className="fiverr-way-container">
-            <Image src={fiverrWayImageThree} width={80} />
-            <div className="my-5 font-bold text-xl">Quality</div>
-            <div>We challange ourselves and teams to aim higher</div>
-          </div>
-          <div className="fiverr-way-container">
-            <Image src={fiverrWayImageFour} width={70} />
-            <div className="my-5 font-bold text-xl">Quality</div>
-            <div>We challange ourselves and teams to aim higher</div>
-          </div>
-          <div className="fiverr-way-container">
-            <Image src={fiverrWayImageFive} width={100} />
-            <div className="my-5 font-bold text-xl">Quality</div>
-            <div>We challange ourselves and teams to aim higher</div>
-          </div>
-          <div className="fiverr-way-container">
-            <Image src={fiverrWayImageSix} width={100} />
-            <div className="my-5 font-bold text-xl">Quality</div>
-            <div>We challange ourselves and teams to aim higher</div>
+          <div className="mt-8">
+            Netta Goldberg, Internal Communications Manager
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">{/* will work on it now */}</div>
+      <div className="w-11/12 mt-32 mx-auto">
+        <div className="mb-8 font-bold text-5xl">Learn more about Fiverr</div>
+        <div className="flex justify-between">
+          {moreAboutFiverrContent.map((items, index) => (
+            <div className="w-1/5">
+              <Image src={items.src} width={300} />
+              <div className="my-4">{items.language}</div>
+              <div className="mb-4 font-semibold text-xl">{items.content}</div>
+              <div className="text-green-600">Watch Now </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
