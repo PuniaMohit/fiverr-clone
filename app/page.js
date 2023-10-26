@@ -1,25 +1,27 @@
 import Image from "next/image";
-import homePageBanner from "./assets/images/homepage-banner.webp";
-import homePageImageTwo from "./assets/images/homepageimagetwo.webp";
-import homePageImageThree from "./assets/images/homepagethree.webp";
-import homePageImageFour from "./assets/images/homepagefour.webp";
-import fiverrWayImageOne from "./assets/images/fiverrwayimageone.webp";
-import fiverrWayImageTwo from "./assets/images/fiverrwayimagetwo.webp";
-import fiverrWayImageThree from "./assets/images/fiverrwayimagethree.webp";
-import fiverrWayImageFour from "./assets/images/fiverrwayimagefour.webp";
-import fiverrWayImageFive from "./assets/images/fiverrwayimagefive.webp";
-import fiverrWayImageSix from "./assets/images/fiverrwayimagesix.webp";
+import {
+  homePageBanner,
+  homePageImageTwo,
+  homePageImageThree,
+  homePageImageFour,
+  fiverrWayImageOne,
+  fiverrWayImageTwo,
+  fiverrWayImageThree,
+  fiverrWayImageFour,
+  fiverrWayImageFive,
+  fiverrWayImageSix,
+} from "./common/images";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons"; it may be used later
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
       <div className="relative">
-        <Image src={homePageBanner} />
+        <Image src={homePageBanner} alt="homePageBanner" />
         <div className="absolute top-20 left-5">
           <div className="font-bold text-4xl text-white mb-5">
-            We make the <br></br>future of <br></br>work,{" "}
+            We make the <br></br>future of <br></br>work,
             <span className="text-yellow-700">work</span>
           </div>
           <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
@@ -45,8 +47,8 @@ export default function Home() {
           small teams, powered <br />
           by <span>unique minds</span>
         </div>
-        <div className="flex flex-wrap gap-8 mx-auto w-11/12 job-main-container">
-          <div className="p-5 job-container rounded">
+        <div className="flex flex-wrap gap-8 mx-auto w-11/12 absolute job-main-container">
+          <div className="p-5 bg-white job-container rounded-lg">
             <div className="font-semibold text-xl">Technology</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">16 openings</div>
             <div>
@@ -54,65 +56,65 @@ export default function Home() {
               technologies.
             </div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Product</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
             <div>Make an impact on the way the world works together.</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Data</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
             <div>The launchpad for successful data careers</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Design</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
             <div>Cultivate your creative career on a global stage</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Marketing</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
             <div>Living and breathing the Fiverr brand</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Business</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">0 openings</div>
             <div>
               Leading global expansion to level the professional playing field
             </div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">
               Customer Care and Trust & Safety
             </div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
             <div>The front line of consumer experience</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">
               Legal, HR and Operations
             </div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
             <div>The backbone of Fiverr's culture</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Finance</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
             <div>Bills, Budgets, Balances and Beyond</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Sales</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
             <div>Recognize opportunities to widen Fiverr's impact</div>
           </div>
-          <div className="p-5 bg-white job-container">
+          <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Cyber, IT and MIS</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
             <div>Make an impact through cutting edge technology</div>
           </div>
         </div>
       </div>
-      <div className="offices-container">
+      <div className="offices-container w-4/5 mx-auto flex justify-between items-center">
         <div className="w-2/5">
           <div className="font-bold text-3xl">Our offices</div>
           <div className="my-5">
@@ -153,44 +155,43 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="my-16 font-bold text-4xl text-center">The Fiverr Way</div>
+        <div className="my-16 font-bold text-4xl text-center">
+          The Fiverr Way
+        </div>
         <div className="flex flex-wrap w-4/5 mx-auto gap-4">
           <div className="fiverr-way-container">
-            <Image src={fiverrWayImageOne} width={100}/>
+            <Image src={fiverrWayImageOne} width={100} />
             <div className="my-5 font-bold text-xl">Quality</div>
             <div>We challange ourselves and teams to aim higher</div>
           </div>
           <div className="fiverr-way-container">
-            <Image  src={fiverrWayImageTwo} width={80}/>
+            <Image src={fiverrWayImageTwo} width={80} />
             <div className="my-5 font-bold text-xl">Quality</div>
             <div>We challange ourselves and teams to aim higher</div>
-          </div><div className="fiverr-way-container">
-            <Image  src={fiverrWayImageThree} width={80}/>
+          </div>
+          <div className="fiverr-way-container">
+            <Image src={fiverrWayImageThree} width={80} />
             <div className="my-5 font-bold text-xl">Quality</div>
             <div>We challange ourselves and teams to aim higher</div>
-          </div><div className="fiverr-way-container">
-            <Image  src={fiverrWayImageFour} width={70}/>
+          </div>
+          <div className="fiverr-way-container">
+            <Image src={fiverrWayImageFour} width={70} />
             <div className="my-5 font-bold text-xl">Quality</div>
             <div>We challange ourselves and teams to aim higher</div>
-          </div><div className="fiverr-way-container">
-            <Image  src={fiverrWayImageFive} width={100}/>
+          </div>
+          <div className="fiverr-way-container">
+            <Image src={fiverrWayImageFive} width={100} />
             <div className="my-5 font-bold text-xl">Quality</div>
             <div>We challange ourselves and teams to aim higher</div>
-          </div><div className="fiverr-way-container">
-            <Image  src={fiverrWayImageSix} width={100}/>
+          </div>
+          <div className="fiverr-way-container">
+            <Image src={fiverrWayImageSix} width={100} />
             <div className="my-5 font-bold text-xl">Quality</div>
             <div>We challange ourselves and teams to aim higher</div>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
-           <div><Image/></div>
-           <div><Image/></div>
-           <div><Image/></div>
-           <div><Image/></div>
-           <div><Image/></div>
-           <div><Image/></div>
-      </div>
+      <div className="grid grid-cols-4 gap-4">{/* will work on it now */}</div>
     </div>
   );
 }
