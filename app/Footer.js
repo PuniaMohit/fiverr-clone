@@ -73,7 +73,7 @@ const Footer = () => {
           See All Open Positions
         </button>
       </div>
-      <div className="sm:flex flex-wrap md:gap-8 lg:gap-0 mt-16 mb-8 border-b-2 pb-8 w-11/12 mx-auto">
+      <div className="sm:flex flex-wrap sm:gap-8 lg:gap-0 mt-16 mb-8 border-b-2 pb-8 w-11/12 mx-auto">
         <div className="lg:w-1/5">
           {categories.map((item, index) => (
             <div className={`mb-4 ${index === 0 && "font-semibold"}`}>
@@ -121,6 +121,10 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex justify-between w-11/12 mx-auto">
+        <div className="flex gap-4"></div>
+        <div className="flex gap-4"></div>
       </div>
     </div>
   );

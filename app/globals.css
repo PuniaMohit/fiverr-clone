@@ -21,8 +21,59 @@
   margin-top: 700px;
 }
 
+@media (max-width: 1280px) {
+  .offices-container {
+    margin-top: 800px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .job-container {
+    width: 45%;
+  }
+  .offices-container {
+    margin-top: 1150px;
+  }
+}
+
 .fiverr-way-container {
   width: 31%;
+}
+
+@media (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+  .desktop-navbar {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+  }
+  .job-container {
+    width: 100%;
+  }
+  .offices-container {
+    margin-top: 1900px;
+  }
+}
+
+@media (max-width: 426px) {
+  .offices-container {
+    margin-top: 2000px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offices-container {
+    margin-top: 2100px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
