@@ -23,6 +23,11 @@ import {
   moreAboutFiverrImageThree,
   moreAboutFiverrImageFour,
 } from "./common/images";
+import { BiLogoFacebook } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
 
 const fiverrWayContent = [
   {
@@ -90,14 +95,16 @@ export default function HomePage() {
   return (
     <div>
       <div className="relative">
-        <Image src={homePageBanner} alt="homePageBanner" height={1000} />
-        <div className="absolute top-28 left-20">
-          <div className="font-bold text-6xl text-white mb-10">
+        <div>
+          <Image src={homePageBanner} alt="homePageBanner" />
+        </div>
+        <div className="absolute xl:top-28 xl:left-20 lg:top-16 lg:left-12 md:top-8 md:left-4 top-0 left-4">
+          <div className="font-bold xl:text-6xl lg:text-3xl text-base md:text-xl  text-white sm:mb-10 mb-0">
             We make <br />
             the future of <br></br>work,
             <span className="text-yellow-400 italic font-mono"> work</span>
           </div>
-          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          <button class="bg-green-500 hover:bg-green-700 text-white font-bold sm:text-base text-xs sm:py-2 sm:px-4 rounded py-1 px-2">
             Find Your Next Job
           </button>
         </div>
@@ -113,7 +120,7 @@ export default function HomePage() {
         <Image src={homePageImageTwo} />
       </div>
       <div className="relative">
-        <div className="font-semibold text-center bg-emerald-100 pt-5 pb-40 text-5xl">
+        <div className="font-semibold text-center bg-emerald-100 pt-5 pb-40 sm:text-5xl text-2xl">
           We'are a big team,
           <br />
           comprised of pretty <br />
@@ -187,8 +194,8 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="offices-container w-4/5 mx-auto flex justify-between items-center">
-        <div className="w-2/5">
+      <div className="offices-container w-4/5 mx-auto md:flex justify-between">
+        <div className="md:w-2/5 w-full">
           <div className="font-bold text-3xl">Our offices</div>
           <div className="my-5">
             We’re all about providing a conducive environment so that everyone
@@ -217,14 +224,13 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between w-1/2 relative">
+        <div className="flex justify-between md:justify-start md:gap-4 gap-0 md:w-1/2 w-full ">
           <div>
             <Image src={homePageImageThree} width={250} />
           </div>
           <div>
             <Image src={homePageImageFour} width={250} />
           </div>
-          <faEye />
         </div>
       </div>
       <div>
@@ -241,35 +247,35 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4 mt-24">
-        <div>
+      <div className="grid md:grid-cols-4 gap-4 mt-24 grid-cols-6 ">
+        <div className="md:col-span-1 col-span-2">
           <Image src={gridImageOne} />
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2 col-span-4">
           <Image src={gridImageTwo} />
         </div>
-        <div>
+        <div className="md:col-span-1 col-span-3">
           <Image src={gridImageThree} />
         </div>
-        <div>
+        <div className="md:col-span-1 col-span-3">
           <Image src={gridImageFour} />
         </div>
-        <div>
+        <div className="md:col-span-1 col-span-2">
           <Image src={gridImageFive} />
         </div>
-        <div>
+        <div className="md:col-span-1 col-span-2">
           <Image src={gridImageSix} />
         </div>
-        <div>
+        <div className="md:col-span-1 col-span-2">
           <Image src={gridImageSeven} />
         </div>
       </div>
-      <div className="flex gap-40 w-11/12 justify-between mx-auto mt-24 items-center">
+      <div className="md:flex flex-none gap-20 w-11/12 md:justify-between mx-auto mt-24 items-center">
         <div className="">
-          <Image src={reviewImage} width={550} />
+          <Image src={reviewImage} width={550} className="mx-auto" />
         </div>
-        <div className="w-1/2 mt-4">
-          <div className="font-semibold text-2xl leading-10">
+        <div className="md:w-1/2 w-4/5 mt-4 mx-auto">
+          <div className="md:font-semibold font-medium md:text-2xl text-xl md:leading-10 leading-6">
             After almost a decade with Fiverr, it's getting hard to separate my
             own story from the Fiverr story. I am known as Netta from Fiverr, I
             give my Fiverr email when I'm asked to provide an email address, my
@@ -283,15 +289,34 @@ export default function HomePage() {
       </div>
       <div className="w-11/12 mt-32 mx-auto">
         <div className="mb-8 font-bold text-5xl">Learn more about Fiverr</div>
-        <div className="flex justify-between">
+        <div className="flex md:gap-12 sm:gap-16 gap-8 flex-wrap">
           {moreAboutFiverrContent.map((items, index) => (
-            <div className="w-1/5">
+            <div className="md:w-1/5 sm:w-2/5 w-3/5 sm:mx-0 sm:mt-0 mt-8 mx-auto">
               <Image src={items.src} width={300} />
-              <div className="my-4">{items.language}</div>
-              <div className="mb-4 font-semibold text-xl">{items.content}</div>
+              <div className="sm:my-4 my-1">{items.language}</div>
+              <div className="sm:mb-4 mb-1 font-semibold text-xl">
+                {items.content}
+              </div>
               <div className="text-green-600">Watch Now </div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="flex gap-8 mt-12 mx-auto w-11/12 flex-wrap">
+        <div className="py-4 px-8 border-2">
+          <BiLogoLinkedin />
+        </div>
+        <div className="py-4 px-8 border-2">
+          <BiLogoFacebook />
+        </div>
+        <div className="py-4 px-8 border-2">
+          <BsTwitter />
+        </div>
+        <div className="py-4 px-8 border-2">
+          <FaWhatsapp />
+        </div>
+        <div className="py-4 px-8 border-2">
+          <IoIosMail />
         </div>
       </div>
     </div>
