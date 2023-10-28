@@ -247,7 +247,7 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-      <div className="grid md:grid-cols-4 gap-4 mt-24 grid-cols-6 ">
+      <div className="grid md:grid-cols-4 sm:gap-4 gap-1 mt-24 grid-cols-6 ">
         <div className="md:col-span-1 col-span-2">
           <Image src={gridImageOne} />
         </div>

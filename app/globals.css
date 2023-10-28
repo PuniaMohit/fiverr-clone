@@ -31,6 +31,7 @@
   .job-container {
     width: 45%;
   }
+
   .offices-container {
     margin-top: 1150px;
   }
@@ -44,6 +45,7 @@
   .mobile-navbar {
     display: none;
   }
+
   .desktop-navbar {
     display: block;
   }
@@ -53,20 +55,31 @@
   .desktop-navbar {
     display: none;
   }
+
   .mobile-navbar {
     display: block;
   }
+
   .job-container {
     width: 100%;
   }
+
   .offices-container {
     margin-top: 1900px;
+  }
+
+  .fiverr-way-container {
+    width: 45%;
   }
 }
 
 @media (max-width: 426px) {
   .offices-container {
     margin-top: 2000px;
+  }
+
+  .fiverr-way-container {
+    width: 90%;
   }
 }
 
@@ -77,16 +90,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  }
+  :root {}
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
