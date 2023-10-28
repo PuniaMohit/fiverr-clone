@@ -73,11 +73,13 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 640px) {
   .offices-container {
-    margin-top: 2000px;
+    margin-top: 1600px;
   }
+}
 
+@media (max-width: 426px) {
   .fiverr-way-container {
     width: 90%;
   }
@@ -85,17 +87,21 @@
 
 @media (max-width: 375px) {
   .offices-container {
-    margin-top: 2100px;
+    margin-top: 1700px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {}
+  :root {
+  }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
