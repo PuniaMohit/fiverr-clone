@@ -98,18 +98,19 @@ export default function HomePage() {
         <div>
           <Image src={homePageBanner} alt="homePageBanner" />
         </div>
-        <div className="absolute xl:top-28 xl:left-20 lg:top-16 lg:left-12 md:top-8 md:left-4 top-0 left-4">
-          <div className="font-bold xl:text-6xl lg:text-3xl text-base md:text-xl  text-white sm:mb-10 mb-0">
-            We make <br />
-            the future of <br></br>work,
+        <div className="absolute xl:top-32 xl:left-4 lg:top-24 md:top-8 md:left-4 top-12 left-4 sm:text-left w-full">
+          <div className="font-bold text-white md:mb-5 mb-0 md:w-1/5 lg:text-4xl md:text-2xl text-base mx-auto md:mx-0 w-fit ">
+            We make the future of work,
             <span className="text-yellow-400 italic font-mono"> work</span>
           </div>
-          <button class="bg-green-500 hover:bg-green-700 text-white font-bold sm:text-base text-xs sm:py-2 sm:px-4 rounded py-1 px-2">
-            Find Your Next Job
-          </button>
+          <div className="mx-auto md:mx-0 w-fit md:w-full">
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold sm:text-base md:text-lg lg:text-xl text-xs sm:py-2 sm:px-4 rounded py-1 px-2 ">
+              Find Your Next Job
+            </button>
+          </div>
         </div>
       </div>
-      <div className="my-10 text-center">
+      <div className="my-10 md:text-center text-left w-11/12 mx-auto">
         <div className="font-bold text-4xl mb-5">why we're here</div>
         <div>
           We create opportunity for anyone in the world to build <br />
@@ -119,19 +120,16 @@ export default function HomePage() {
       <div className="w-11/12 mx-auto">
         <Image src={homePageImageTwo} />
       </div>
-      <div className="relative">
-        <div className="font-semibold text-center bg-emerald-100 pt-5 pb-40 sm:text-5xl text-2xl">
-          We'are a big team,
-          <br />
-          comprised of pretty <br />
-          small teams, powered <br />
-          by <span>unique minds</span>
+      <div className="relative bg-emerald-100 ">
+        <div className="font-semibold md:text-center text-left pt-5 pb-40 md:text-3xl text-2xl md:w-3/5 w-4/5 mx-auto">
+          We'are a big team, comprised of pretty small teams, powered by{" "}
+          <span>unique minds</span>
         </div>
         <div className="flex flex-wrap gap-8 mx-auto w-11/12 absolute job-main-container">
           <div className="p-5 bg-white job-container rounded-lg">
             <div className="font-semibold text-xl">Technology</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">16 openings</div>
-            <div>
+            <div className="sm:block hidden">
               Perfecting the platform and applications with cutting-edge
               technologies.
             </div>
@@ -139,27 +137,35 @@ export default function HomePage() {
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Product</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
-            <div>Make an impact on the way the world works together.</div>
+            <div className="sm:block hidden">
+              Make an impact on the way the world works together.
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Data</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
-            <div>The launchpad for successful data careers</div>
+            <div className="sm:block hidden">
+              The launchpad for successful data careers
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Design</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
-            <div>Cultivate your creative career on a global stage</div>
+            <div className="sm:block hidden">
+              Cultivate your creative career on a global stage
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Marketing</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
-            <div>Living and breathing the Fiverr brand</div>
+            <div className="sm:block hidden">
+              Living and breathing the Fiverr brand
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Business</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">0 openings</div>
-            <div>
+            <div className="sm:block hidden">
               Leading global expansion to level the professional playing field
             </div>
           </div>
@@ -168,29 +174,39 @@ export default function HomePage() {
               Customer Care and Trust & Safety
             </div>
             <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
-            <div>The front line of consumer experience</div>
+            <div className="sm:block hidden">
+              The front line of consumer experience
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">
               Legal, HR and Operations
             </div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
-            <div>The backbone of Fiverr's culture</div>
+            <div className="sm:block hidden">
+              The backbone of Fiverr's culture
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Finance</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
-            <div>Bills, Budgets, Balances and Beyond</div>
+            <div className="sm:block hidden">
+              Bills, Budgets, Balances and Beyond
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Sales</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
-            <div>Recognize opportunities to widen Fiverr's impact</div>
+            <div className="sm:block hidden">
+              Recognize opportunities to widen Fiverr's impact
+            </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Cyber, IT and MIS</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
-            <div>Make an impact through cutting edge technology</div>
+            <div className="sm:block hidden">
+              Make an impact through cutting edge technology
+            </div>
           </div>
         </div>
       </div>
@@ -224,11 +240,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between md:justify-start md:gap-4 gap-0 md:w-1/2 w-full ">
+        <div className="flex sm:justify-between justify-center md:gap-4 gap-0 md:w-1/2 w-full mt-8 sm:mt-0">
           <div>
             <Image src={homePageImageThree} width={250} />
           </div>
-          <div>
+          <div className="sm:block hidden">
             <Image src={homePageImageFour} width={250} />
           </div>
         </div>
@@ -240,9 +256,15 @@ export default function HomePage() {
         <div className="flex flex-wrap w-4/5 mx-auto gap-4">
           {fiverrWayContent.map((items) => (
             <div className="fiverr-way-container">
-              <Image src={items.src} width={items.width} />
-              <div className="my-5 font-bold text-xl">{items.title}</div>
-              <div>{items.content}</div>
+              <Image
+                src={items.src}
+                width={items.width}
+                className="sm:mx-0 mx-auto"
+              />
+              <div className="my-5 font-bold text-xl sm:text-left text-center">
+                {items.title}
+              </div>
+              <div className="sm:text-left text-center">{items.content}</div>
             </div>
           ))}
         </div>
@@ -288,11 +310,17 @@ export default function HomePage() {
         </div>
       </div>
       <div className="w-11/12 mt-32 mx-auto">
-        <div className="mb-8 font-bold text-5xl">Learn more about Fiverr</div>
+        <div className="mb-8 font-bold sm:text-5xl text-2xl">
+          Learn more about Fiverr
+        </div>
         <div className="flex md:gap-12 sm:gap-16 gap-8 flex-wrap">
           {moreAboutFiverrContent.map((items, index) => (
-            <div className="md:w-1/5 sm:w-2/5 w-3/5 sm:mx-0 sm:mt-0 mt-8 mx-auto">
-              <Image src={items.src} width={300} />
+            <div
+              className={`md:w-1/5 sm:w-2/5 w-full sm:mx-0 sm:mt-0 mt-8 mx-auto ${
+                index !== 0 && "sm:block hidden"
+              }`}
+            >
+              <Image src={items.src} className="bg-cover" />
               <div className="sm:my-4 my-1">{items.language}</div>
               <div className="sm:mb-4 mb-1 font-semibold text-xl">
                 {items.content}
