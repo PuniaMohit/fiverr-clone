@@ -8,6 +8,11 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { BsGlobe } from "react-icons/bs";
 import { LuPersonStanding } from "react-icons/lu";
 import { BsCurrencyRupee } from "react-icons/bs";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const categories = [
   "Categories",
@@ -77,7 +82,7 @@ const Footer = () => {
   return (
     <div className="mt-48">
       <div className="w-full bg-green-900 text-center py-24">
-        <div className="mt-8 font-bold text-5xl text-white">
+        <div className="mt-8 font-bold sm:text-5xl text-2xl text-white">
           We love working here. We think
           <span className="text-yellow-600"> you will too.</span>
         </div>
@@ -85,7 +90,7 @@ const Footer = () => {
           See All Open Positions
         </button>
       </div>
-      <div className="sm:flex flex-wrap sm:gap-8 lg:gap-0 mt-16 border-b-2 pb-8 w-11/12 mx-auto">
+      <div className="sm:block hidden sm:flex flex-wrap sm:gap-8 lg:gap-0 mt-16 border-b-2 pb-8 w-11/12 mx-auto">
         <div className="lg:w-1/5">
           {categories.map((item, index) => (
             <div className={`mb-4 ${index === 0 && "font-semibold"}`}>
@@ -133,6 +138,127 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="block sm:hidden">
+        <Accordion
+          sx={{
+            backgroundColor: "#f3f3f3",
+            boxShadow: "none",
+            border: "none",
+            "&.MuiAccordion-root:before": {
+              content: "none",
+            },
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography sx={{ fontWeight: "700" }}>Catergories</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {categories.map((item, index) => (
+              <div className="mb-4 text-slate-600">{index !== 0 && item}</div>
+            ))}
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            backgroundColor: "#f3f3f3",
+            boxShadow: "none",
+            border: "none",
+            "&.MuiAccordion-root:before": {
+              content: "none",
+            },
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography sx={{ fontWeight: "700" }}>About</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {about.map((item, index) => (
+              <div className="mb-4 text-slate-600">{index !== 0 && item}</div>
+            ))}
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            backgroundColor: "#f3f3f3",
+            boxShadow: "none",
+            border: "none",
+            "&.MuiAccordion-root:before": {
+              content: "none",
+            },
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography sx={{ fontWeight: "700" }}>
+              Support and Education
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {supportAndEducation.map((item, index) => (
+              <div className="mb-4 text-slate-600">{index !== 0 && item}</div>
+            ))}
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            backgroundColor: "#f3f3f3",
+            boxShadow: "none",
+            border: "none",
+            "&.MuiAccordion-root:before": {
+              content: "none",
+            },
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography sx={{ fontWeight: "700" }}>Community</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {community.map((item, index) => (
+              <div className="mb-4 text-slate-600">{index !== 0 && item}</div>
+            ))}
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            backgroundColor: "#f3f3f3",
+            boxShadow: "none",
+            border: "none",
+            "&.MuiAccordion-root:before": {
+              content: "none",
+            },
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography sx={{ fontWeight: "700" }}>
+              Business Solutions
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {businessSolutions.map((item, index) => (
+              <div className="mb-4 text-slate-600">{index !== 0 && item}</div>
+            ))}
+          </AccordionDetails>
+        </Accordion>
       </div>
       <div className="md:flex justify-between w-11/12 mx-auto items-center md:mb-0 mb-4">
         <div className="sm:flex gap-4 items-center mx-auto sm:mx-0 w-fit">

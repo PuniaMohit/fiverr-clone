@@ -28,6 +28,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
+import CustomNextIcon from "./assets/images/svg/customNext";
 
 const fiverrWayContent = [
   {
@@ -95,32 +96,32 @@ export default function HomePage() {
   return (
     <div>
       <div className="relative">
-        <div>
-          <Image src={homePageBanner} alt="homePageBanner" />
-        </div>
-        <div className="absolute xl:top-32 xl:left-4 lg:top-24 md:top-8 md:left-4 top-12 left-4 sm:text-left w-full">
-          <div className="font-bold text-white md:mb-5 mb-0 md:w-1/5 lg:text-4xl md:text-2xl text-base mx-auto md:mx-0 w-fit ">
+        <div className="navbar-image-container"></div>
+        <div className="absolute xl:top-32 xl:left-4 lg:top-24 md:top-8 md:left-4  top-36 sm:text-left w-full">
+          <div className="font-bold text-white md:mb-5 mb-0 md:w-1/5 text-4xl md:text-left text-center mx-auto md:mx-0 w-fit ">
             We make the future of work,
             <span className="text-yellow-400 italic font-mono"> work</span>
           </div>
           <div className="mx-auto md:mx-0 w-fit md:w-full">
-            <button class="bg-green-500 hover:bg-green-700 text-white font-bold sm:text-base md:text-lg lg:text-xl text-xs sm:py-2 sm:px-4 rounded py-1 px-2 ">
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold sm:text-base text-lg lg:text-xl text-xs sm:py-2 sm:px-4 rounded py-1 px-2 ">
               Find Your Next Job
             </button>
           </div>
         </div>
       </div>
       <div className="my-10 md:text-center text-left w-11/12 mx-auto">
-        <div className="font-bold text-4xl mb-5">why we're here</div>
+        <div className="font-bold sm:text-4xl text-2xl mb-5">
+          Why we're here
+        </div>
         <div>
-          We create opportunity for anyone in the world to build <br />
-          their business, brand, or dream.
+          We create opportunity for anyone in the world to build their business,
+          brand, or dream.
         </div>
       </div>
       <div className="w-11/12 mx-auto">
         <Image src={homePageImageTwo} />
       </div>
-      <div className="relative bg-emerald-100 ">
+      <div className="relative bg-emerald-100 mt-8">
         <div className="font-semibold md:text-center text-left pt-5 pb-40 md:text-3xl text-2xl md:w-3/5 w-4/5 mx-auto">
           We'are a big team, comprised of pretty small teams, powered by{" "}
           <span>unique minds</span>
@@ -212,7 +213,9 @@ export default function HomePage() {
       </div>
       <div className="offices-container w-4/5 mx-auto md:flex justify-between">
         <div className="md:w-2/5 w-full">
-          <div className="font-bold text-3xl">Our offices</div>
+          <div className="font-bold text-3xl">
+            Our <span className="italic font-semibold">offices</span>
+          </div>
           <div className="my-5">
             We’re all about providing a conducive environment so that everyone
             can learn, thrive, and be the best version of themselves. All of our
@@ -251,7 +254,7 @@ export default function HomePage() {
       </div>
       <div>
         <div className="my-16 font-bold text-4xl text-center">
-          The Fiverr Way
+          The <span className="italic font-semibold">Fiverr</span> Way
         </div>
         <div className="flex flex-wrap w-4/5 mx-auto gap-4">
           {fiverrWayContent.map((items) => (
@@ -269,26 +272,29 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-      <div className="grid md:grid-cols-4 sm:gap-4 gap-1 mt-24 grid-cols-6 ">
-        <div className="md:col-span-1 col-span-2">
+      <div className="grid md:grid-cols-4 sm:gap-4 grid-cols-2 gap-1 mt-24 sm:grid-cols-6 ">
+        <div className="md:col-span-1 sm:col-span-2 col-span-1">
           <Image src={gridImageOne} />
         </div>
-        <div className="md:col-span-2 col-span-4">
-          <Image src={gridImageTwo} />
-        </div>
-        <div className="md:col-span-1 col-span-3">
+        <div className="md:col-span-1 sm:col-span-3 col-span-1 sm:hidden block">
           <Image src={gridImageThree} />
         </div>
-        <div className="md:col-span-1 col-span-3">
+        <div className="md:col-span-2 sm:col-span-4 col-span-2">
+          <Image src={gridImageTwo} />
+        </div>
+        <div className="md:col-span-1 sm:col-span-3 col-span-1 sm:block hidden">
+          <Image src={gridImageThree} />
+        </div>
+        <div className="md:col-span-1 sm:col-span-3 col-span-1">
           <Image src={gridImageFour} />
         </div>
-        <div className="md:col-span-1 col-span-2">
+        <div className="md:col-span-1 sm:col-span-2 col-span-1">
           <Image src={gridImageFive} />
         </div>
-        <div className="md:col-span-1 col-span-2">
+        <div className="md:col-span-1 sm:col-span-2 col-span-1">
           <Image src={gridImageSix} />
         </div>
-        <div className="md:col-span-1 col-span-2">
+        <div className="md:col-span-1 sm:col-span-2 col-span-1">
           <Image src={gridImageSeven} />
         </div>
       </div>
@@ -325,28 +331,34 @@ export default function HomePage() {
               <div className="sm:mb-4 mb-1 font-semibold text-xl">
                 {items.content}
               </div>
-              <div className="text-green-600">Watch Now </div>
+              <div className="flex gap-1 items-center text-green-600">
+                <div>Watch Now</div>
+                <div style={{ color: "#1DBF73" }}>
+                  <CustomNextIcon />
+                </div>{" "}
+              </div>
             </div>
           ))}
         </div>
       </div>
       <div className="flex gap-8 mt-12 mx-auto w-11/12 flex-wrap">
-        <div className="py-4 px-8 border-2">
+        <div className="py-4 sm:px-8 px-4 border-2">
           <BiLogoLinkedin />
         </div>
-        <div className="py-4 px-8 border-2">
+        <div className="py-4 sm:px-8 px-4 border-2">
           <BiLogoFacebook />
         </div>
-        <div className="py-4 px-8 border-2">
+        <div className="py-4 sm:px-8 px-4 border-2">
           <BsTwitter />
         </div>
-        <div className="py-4 px-8 border-2">
+        <div className="py-4 sm:px-8 px-4 border-2">
           <FaWhatsapp />
         </div>
-        <div className="py-4 px-8 border-2">
+        <div className="py-4 sm:px-8 px-4 border-2">
           <IoIosMail />
         </div>
       </div>
     </div>
   );
+  //1DBF73
 }

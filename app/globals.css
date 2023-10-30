@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+}
+
+.navbar-image-container {
+  background-image: url("../public/images/homepage-banner.webp");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
 }
 
 .job-main-container {
@@ -77,6 +81,9 @@
   .offices-container {
     margin-top: 1600px;
   }
+  .navbar-image-container {
+    height: 360px;
+  }
 }
 
 @media (max-width: 426px) {
@@ -97,11 +104,5 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #f3f3f3;
 }

@@ -66,7 +66,7 @@ const Header = () => {
   return (
     <div className="sticky top-0 bg-white z-10 ">
       <div className=" mobile-navbar ">
-        <div className="flex items-center sm:gap-72 gap-4 mx-auto w-11/12 py-4">
+        <div className="flex items-center w-3/5 sm:w-11/12 justify-between sm:justify-start sm:gap-4  py-4 sm:mx-auto ml-6">
           <div
             className=" text-black xs:mr-5"
             onClick={toggleDrawer("left", true)}
