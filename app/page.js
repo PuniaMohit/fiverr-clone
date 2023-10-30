@@ -109,7 +109,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="my-10 md:text-center text-left w-11/12 mx-auto">
+      <div className="my-10 md:text-center text-left w-11/12 2xl:w-1/5 mx-auto">
         <div className="font-bold sm:text-4xl text-2xl mb-5">
           Why we're here
         </div>
@@ -118,12 +118,10 @@ export default function HomePage() {
           brand, or dream.
         </div>
       </div>
-      <div className="w-11/12 mx-auto">
-        <Image src={homePageImageTwo} />
-      </div>
-      <div className="relative bg-emerald-100 mt-8">
+      <div className="w-11/12 mx-auto homepage-section-one-image"></div>
+      <div className="relative bg-emerald-100 mt-8 2xl:w-3/5 mx-auto">
         <div className="font-semibold md:text-center text-left pt-5 pb-40 md:text-3xl text-2xl md:w-3/5 w-4/5 mx-auto">
-          We'are a big team, comprised of pretty small teams, powered by{" "}
+          We'are a big team, comprised of pretty small teams, powered by
           <span>unique minds</span>
         </div>
         <div className="flex flex-wrap gap-8 mx-auto w-11/12 absolute job-main-container">
@@ -211,7 +209,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="offices-container w-4/5 mx-auto md:flex justify-between">
+      <div className="offices-container w-4/5 mx-auto md:flex justify-between 2xl:w-3/5 ">
         <div className="md:w-2/5 w-full">
           <div className="font-bold text-3xl">
             Our <span className="italic font-semibold">offices</span>
@@ -252,7 +250,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="2xl:w-3/5 mx-auto">
         <div className="my-16 font-bold text-4xl text-center">
           The <span className="italic font-semibold">Fiverr</span> Way
         </div>
@@ -298,11 +296,11 @@ export default function HomePage() {
           <Image src={gridImageSeven} />
         </div>
       </div>
-      <div className="md:flex flex-none gap-20 w-11/12 md:justify-between mx-auto mt-24 items-center">
+      <div className="md:flex flex-none gap-20 w-11/12 md:justify-between mx-auto mt-24 items-center 2xl:w-3/5">
         <div className="">
           <Image src={reviewImage} width={550} className="mx-auto" />
         </div>
-        <div className="md:w-1/2 w-4/5 mt-4 mx-auto">
+        <div className="md:w-1/2 w-4/5 mt-4 mx-auto ">
           <div className="md:font-semibold font-medium md:text-2xl text-xl md:leading-10 leading-6">
             After almost a decade with Fiverr, it's getting hard to separate my
             own story from the Fiverr story. I am known as Netta from Fiverr, I
@@ -315,7 +313,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-11/12 mt-32 mx-auto">
+      <div className="w-11/12 mt-32 mx-auto 2xl:w-3/5">
         <div className="mb-8 font-bold sm:text-5xl text-2xl">
           Learn more about Fiverr
         </div>
@@ -341,7 +339,7 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-      <div className="flex gap-8 mt-12 mx-auto w-11/12 flex-wrap">
+      <div className="flex gap-8 mt-12 mx-auto w-11/12 flex-wrap 2xl:w-3/5">
         <div className="py-4 sm:px-8 px-4 border-2">
           <BiLogoLinkedin />
         </div>

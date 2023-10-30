@@ -86,7 +86,7 @@ const Header = () => {
         </Drawer>
       </div>
       <div className="desktop-navbar ">
-        <div className="flex justify-between items-center mx-auto w-11/12 py-4">
+        <div className="flex justify-between items-center mx-auto w-11/12 py-4 2xl:w-3/5">
           <div>
             <Image src={fiverr} width={100} height={50} />
           </div>

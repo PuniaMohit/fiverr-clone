@@ -2,11 +2,11 @@ const CustomNextIcon = () => {
     return (
         <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="48"  /* Increase the width to make the icon larger */
-        height="48" /* Increase the height to make the icon larger */
+        width="48"  
+        height="48" 
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#1DBF73" /* Set the desired color here */
+        stroke="#1DBF73"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
