@@ -1,5 +1,6 @@
 import fiverr from "../assets/images/pngegg.png";
 import homePageBanner from "../assets/images/homepage-banner.webp";
+import playButton from "../assets/images/play-button.png";
 import homePageImageTwo from "../assets/images/homepageimagetwo.webp";
 import homePageImageThree from "../assets/images/homepagethree.webp";
 import homePageImageFour from "../assets/images/homepagefour.webp";
@@ -24,6 +25,7 @@ import moreAboutFiverrImageFour from "../assets/images/moreAboutFiverrImageFour.
 export {
   fiverr,
   homePageBanner,
+  playButton,
   homePageImageTwo,
   homePageImageThree,
   homePageImageFour,
