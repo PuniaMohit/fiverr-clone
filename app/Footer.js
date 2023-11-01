@@ -82,9 +82,9 @@ const Footer = () => {
   return (
     <div className="mt-48">
       <div className="w-full bg-green-900 text-center py-24">
-        <div className="mt-8 font-bold sm:text-5xl text-2xl text-white">
+        <div className="mt-8 font-bold md:text-5xl text-2xl text-white w-4/5 mx-auto">
           We love working here. We think
-          <span className="text-yellow-600"> you will too.</span>
+          <span className="text-yellow-600 cursive-fonts"> you will too.</span>
         </div>
         <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">
           See All Open Positions

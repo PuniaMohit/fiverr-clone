@@ -4,6 +4,45 @@
 
 :root {}
 
+@font-face {
+  font-family: 'Cursive';
+  src: url('./assets/fonts/domaine-display-web-medium-italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cursive-fonts {
+  font-family: 'Cursive' !important;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.office-examples-next-icon {
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.office-examples-next-icon-right-container {
+  top: 45%;
+  right: 3%;
+}
+
+.office-examples-next-icon-left-container {
+  top: 45%;
+  left: -3%;
+}
+
+.office-examples-next-icon-right-morefevercontent-container {
+  top: 45%;
+  right: -3%;
+}
+
+.play-button-morefevercontent {
+  top: 2%;
+  right: 2%
+}
+
+
 .navbar-image-container {
   background-image: url("../public/images/homepage-banner.webp");
   height: 500px;
@@ -16,6 +55,7 @@
   height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-top: 20%;
 }
 
 @media (min-width: 768px) {
@@ -25,6 +65,12 @@
   }
 }
 
+/* @media(max-wdth:768px) {
+  .navbar-image-container-content {
+    left: 10% !important
+  }
+} */
+
 @media (min-width: 1536px) {
   .homepage-section-one-image {
     width: 60%;
@@ -32,6 +78,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .homepage-section-one-image {
+    padding-top: 30%;
   }
 
   .navbar-image-container-content {
@@ -119,11 +169,21 @@
 
 @media (max-width: 640px) {
   .offices-container {
-    margin-top: 1600px;
+    margin-top: 1250px;
   }
 
   .navbar-image-container {
     height: 360px;
+  }
+
+  .homepage-section-one-image {
+    height: 320px;
+  }
+}
+
+@media(max-width:500px) {
+  .homepage-section-one-image {
+    height: 290px;
   }
 }
 
@@ -131,11 +191,41 @@
   .fiverr-way-container {
     width: 90%;
   }
+
+  .homepage-section-one-image {
+    height: 250px;
+  }
+
+  .office-examples-next-icon-right-container {
+    top: 45%;
+    right: 4%;
+  }
+
+  .office-examples-next-icon-left-container {
+    top: 45%;
+    left: -4%;
+  }
+
+  .office-examples-next-icon-right-morefevercontent-container {
+    top: 45%;
+    right: -4%;
+  }
 }
 
 @media (max-width: 375px) {
-  .offices-container {
-    margin-top: 1700px;
+
+  .homepage-section-one-image {
+    height: 200px;
+  }
+
+  .office-examples-next-icon-left-container {
+    top: 45%;
+    left: -5% !important;
+  }
+
+  .office-examples-next-icon-right-container {
+    top: 45%;
+    right: 6% !important
   }
 }
 

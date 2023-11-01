@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   homePageBanner,
+  playButton,
   homePageImageTwo,
   homePageImageThree,
   homePageImageFour,
@@ -28,6 +29,8 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
+import { FcNext } from "react-icons/fc";
+import { FcPrevious } from "react-icons/fc";
 import CustomNextIcon from "./assets/images/svg/customNext";
 
 const fiverrWayContent = [
@@ -97,10 +100,10 @@ export default function HomePage() {
     <div>
       <div className="relative">
         <div className="navbar-image-container"></div>
-        <div className="absolute xl:top-32 xl:left-4 lg:top-24 md:top-8 md:left-4  top-36 sm:text-left w-full navbar-image-container-content 2xl:w-3/5">
-          <div className="font-bold text-white md:mb-5 mb-0 md:w-1/5 text-4xl md:text-left text-center mx-auto md:mx-0 w-fit ">
-            We make the future of work,
-            <span className="text-yellow-400 italic font-mono"> work</span>
+        <div className="absolute xl:top-32 xl:left-12 lg:top-24 md:top-28 md:left-4  top-36 sm:text-left w-full navbar-image-container-content 2xl:w-3/5">
+          <div className="font-bold text-white md:mb-5 mb-0 md:w-2/5 lg:w-1/5 text-4xl md:text-left text-center mx-auto md:mx-0 w-fit ">
+            <div>We make the future of work,</div>
+            <span className="text-yellow-400 cursive-fonts"> work</span>
           </div>
           <div className="mx-auto md:mx-0 w-fit md:w-full">
             <button class="bg-green-500 hover:bg-green-700 text-white font-bold sm:text-base text-lg lg:text-xl text-xs sm:py-2 sm:px-4 rounded py-1 px-2 ">
@@ -109,25 +112,31 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="my-10 md:text-center text-left w-11/12 2xl:w-1/5 mx-auto">
-        <div className="font-bold sm:text-4xl text-2xl mb-5">
+      <div className="my-10 md:text-center text-left w-11/12 2xl:w-1/5 sm:w-3/5 mx-auto">
+        <div className="font-bold sm:text-4xl text-2xl mb-5 sm:text-center">
           Why we're here
         </div>
-        <div>
+        <div className="sm:text-center">
           We create opportunity for anyone in the world to build their business,
           brand, or dream.
         </div>
       </div>
-      <div className="w-11/12 mx-auto homepage-section-one-image"></div>
-      <div className="relative bg-emerald-100 mt-8 2xl:w-ful mx-auto">
+      <div className="w-11/12 mx-auto relative homepage-section-one-image">
+        <div className="play-button">
+          <Image src={playButton} className="mx-auto" />
+        </div>
+      </div>
+      <div className="relative bg-emerald-100 2xl:w-ful mx-auto">
         <div className="font-semibold md:text-center text-left pt-5 pb-40 md:text-3xl text-2xl xl:w-1/5  md:w-3/5 w-4/5 mx-auto ">
           We'are a big team, comprised of pretty small teams, powered by
-          <span>unique minds</span>
+          <span className="cursive-fonts">unique minds</span>
         </div>
         <div className="flex flex-wrap gap-8 mx-auto w-11/12  absolute job-main-container">
           <div className="p-5 bg-white job-container rounded-lg">
             <div className="font-semibold text-xl">Technology</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">16 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3 ">
+              16 openings
+            </div>
             <div className="sm:block hidden">
               Perfecting the platform and applications with cutting-edge
               technologies.
@@ -135,35 +144,45 @@ export default function HomePage() {
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Product</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              2 openings
+            </div>
             <div className="sm:block hidden">
               Make an impact on the way the world works together.
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Data</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              2 openings
+            </div>
             <div className="sm:block hidden">
               The launchpad for successful data careers
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Design</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              1 openings
+            </div>
             <div className="sm:block hidden">
               Cultivate your creative career on a global stage
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Marketing</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              2 openings
+            </div>
             <div className="sm:block hidden">
               Living and breathing the Fiverr brand
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Business</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">0 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              0 openings
+            </div>
             <div className="sm:block hidden">
               Leading global expansion to level the professional playing field
             </div>
@@ -172,7 +191,9 @@ export default function HomePage() {
             <div className="font-semibold text-xl">
               Customer Care and Trust & Safety
             </div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">2 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              2 openings
+            </div>
             <div className="sm:block hidden">
               The front line of consumer experience
             </div>
@@ -181,28 +202,36 @@ export default function HomePage() {
             <div className="font-semibold text-xl">
               Legal, HR and Operations
             </div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              1 openings
+            </div>
             <div className="sm:block hidden">
               The backbone of Fiverr's culture
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Finance</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              1 openings
+            </div>
             <div className="sm:block hidden">
               Bills, Budgets, Balances and Beyond
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Sales</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              1 openings
+            </div>
             <div className="sm:block hidden">
               Recognize opportunities to widen Fiverr's impact
             </div>
           </div>
           <div className="p-5 bg-white rounded-lg job-container">
             <div className="font-semibold text-xl">Cyber, IT and MIS</div>
-            <div className="text-sm text-slate-400 mb-4 mt-3">1 openings</div>
+            <div className="text-sm text-slate-400 sm:mb-4 sm:mt-3">
+              1 openings
+            </div>
             <div className="sm:block hidden">
               Make an impact through cutting edge technology
             </div>
@@ -212,7 +241,8 @@ export default function HomePage() {
       <div className="offices-container w-4/5 mx-auto md:flex justify-between 2xl:w-3/5 ">
         <div className="md:w-2/5 w-full">
           <div className="font-bold text-3xl">
-            Our <span className="italic font-semibold">offices</span>
+            Our{" "}
+            <span className="italic font-semibold cursive-fonts">offices</span>
           </div>
           <div className="my-5">
             We’re all about providing a conducive environment so that everyone
@@ -241,18 +271,34 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="flex sm:justify-between justify-center md:gap-4 gap-0 md:w-1/2 w-full mt-8 sm:mt-0">
-          <div>
-            <Image src={homePageImageThree}  />
+        <div className="flex sm:justify-between justify-center md:gap-4 gap-0 md:w-1/2 w-full mt-8 sm:mt-0 relative h-fit	">
+          <div className="relative">
+            <Image src={homePageImageThree} />
+            <div className="absolute bottom-2 left-2 text-white font-semibold ">
+              Tel Aviv, Israel
+            </div>
           </div>
-          <div className="sm:block hidden">
-            <Image src={homePageImageFour}  />
+          <div className="sm:block hidden relative">
+            <Image src={homePageImageFour} />
+            <div className="absolute bottom-2 left-2 text-white font-semibold ">
+              NYC, New York, USA
+            </div>
+          </div>
+          <div className="absolute office-examples-next-icon-right-container">
+            <div className="office-examples-next-icon bg-white absolute">
+              <FcNext />
+            </div>
+          </div>
+          <div className="absolute office-examples-next-icon-left-container">
+            <div className="office-examples-next-icon bg-white absolute">
+              <FcPrevious />
+            </div>
           </div>
         </div>
       </div>
       <div className="2xl:w-3/5 mx-auto">
-        <div className="my-16 font-bold text-4xl text-center">
-          The <span className="italic font-semibold">Fiverr</span> Way
+        <div className="my-16 font-semibold text-4xl text-center">
+          The <span className="cursive-fonts font-semibold">Fiverr</span> way
         </div>
         <div className="flex flex-wrap w-4/5 mx-auto gap-4">
           {fiverrWayContent.map((items) => (
@@ -301,15 +347,21 @@ export default function HomePage() {
           <Image src={reviewImage} width={550} className="mx-auto" />
         </div>
         <div className="md:w-1/2 w-4/5 mt-4 mx-auto ">
-          <div className="md:font-semibold font-medium md:text-2xl text-xl md:leading-10 leading-6">
-            After almost a decade with Fiverr, it's getting hard to separate my
-            own story from the Fiverr story. I am known as Netta from Fiverr, I
-            give my Fiverr email when I'm asked to provide an email address, my
-            emergency contact is a friend I met at Fiverr, and I'm often told
-            thatthe Fiverr offices look just like my own living room.
+          <div className="md:font-semibold font-medium md:text-2xl text-xl md:leading-10 leading-6 cursive-fonts">
+            <i>
+              After almost a decade with Fiverr, it's getting hard to separate
+              my own story from the Fiverr story. I am known as Netta from
+              Fiverr, I give my Fiverr email when I'm asked to provide an email
+              address, my emergency contact is a friend I met at Fiverr, and I'm
+              often told thatthe Fiverr offices look just like my own living
+              room.
+            </i>
           </div>
-          <div className="mt-8">
-            Netta Goldberg, Internal Communications Manager
+          <div className="mt-8 ">
+            <span className="font-semibold"> Netta Goldberg, </span>{" "}
+            <span className="cursive-fonts font-normal">
+              Internal Communications Manager
+            </span>
           </div>
         </div>
       </div>
@@ -324,7 +376,30 @@ export default function HomePage() {
                 index !== 0 && "sm:block hidden"
               }`}
             >
-              <Image src={items.src} className="bg-cover" />
+              <div className="relative">
+                <Image src={items.src} className="bg-cover" />
+                <div className="absolute play-button-morefevercontent md:w-1/5">
+                  <Image src={playButton} className="mx-auto" />
+                </div>
+                <div
+                  className={` ${
+                    index !== 0 ? "sm:hidden block" : "sm:hidden block"
+                  } absolute office-examples-next-icon-left-container`}
+                >
+                  <div className="office-examples-next-icon bg-white">
+                    <FcPrevious />
+                  </div>
+                </div>
+                <div
+                  className={`${
+                    index !== 0 ? "sm:hidden block" : "sm:hidden block"
+                  } absolute office-examples-next-icon-right-morefevercontent-container`}
+                >
+                  <div className="office-examples-next-icon bg-white ">
+                    <FcNext />
+                  </div>
+                </div>
+              </div>
               <div className="sm:my-4 my-1">{items.language}</div>
               <div className="sm:mb-4 mb-1 font-semibold text-xl">
                 {items.content}
@@ -333,7 +408,7 @@ export default function HomePage() {
                 <div>Watch Now</div>
                 <div style={{ color: "#1DBF73" }}>
                   <CustomNextIcon />
-                </div>{" "}
+                </div>
               </div>
             </div>
           ))}
