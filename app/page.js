@@ -97,7 +97,7 @@ export default function HomePage() {
     <div>
       <div className="relative">
         <div className="navbar-image-container"></div>
-        <div className="absolute xl:top-32 xl:left-4 lg:top-24 md:top-8 md:left-4  top-36 sm:text-left w-full">
+        <div className="absolute xl:top-32 xl:left-4 lg:top-24 md:top-8 md:left-4  top-36 sm:text-left w-full navbar-image-container-content 2xl:w-3/5">
           <div className="font-bold text-white md:mb-5 mb-0 md:w-1/5 text-4xl md:text-left text-center mx-auto md:mx-0 w-fit ">
             We make the future of work,
             <span className="text-yellow-400 italic font-mono"> work</span>
@@ -119,12 +119,12 @@ export default function HomePage() {
         </div>
       </div>
       <div className="w-11/12 mx-auto homepage-section-one-image"></div>
-      <div className="relative bg-emerald-100 mt-8 2xl:w-3/5 mx-auto">
-        <div className="font-semibold md:text-center text-left pt-5 pb-40 md:text-3xl text-2xl md:w-3/5 w-4/5 mx-auto">
+      <div className="relative bg-emerald-100 mt-8 2xl:w-ful mx-auto">
+        <div className="font-semibold md:text-center text-left pt-5 pb-40 md:text-3xl text-2xl xl:w-1/5  md:w-3/5 w-4/5 mx-auto ">
           We'are a big team, comprised of pretty small teams, powered by
           <span>unique minds</span>
         </div>
-        <div className="flex flex-wrap gap-8 mx-auto w-11/12 absolute job-main-container">
+        <div className="flex flex-wrap gap-8 mx-auto w-11/12  absolute job-main-container">
           <div className="p-5 bg-white job-container rounded-lg">
             <div className="font-semibold text-xl">Technology</div>
             <div className="text-sm text-slate-400 mb-4 mt-3">16 openings</div>
@@ -243,10 +243,10 @@ export default function HomePage() {
         </div>
         <div className="flex sm:justify-between justify-center md:gap-4 gap-0 md:w-1/2 w-full mt-8 sm:mt-0">
           <div>
-            <Image src={homePageImageThree} width={250} />
+            <Image src={homePageImageThree}  />
           </div>
           <div className="sm:block hidden">
-            <Image src={homePageImageFour} width={250} />
+            <Image src={homePageImageFour}  />
           </div>
         </div>
       </div>

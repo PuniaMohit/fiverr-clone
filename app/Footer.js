@@ -260,7 +260,7 @@ const Footer = () => {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className="md:flex justify-between w-11/12 mx-auto items-center md:mb-0 mb-4">
+      <div className="md:flex justify-between w-11/12 mx-auto items-center md:mb-0 mb-4 2xl:w-3/5">
         <div className="sm:flex gap-4 items-center mx-auto sm:mx-0 w-fit">
           <SiFiverr size="100" className="mx-auto" />
           <div>© Fiverr International Ltd. 2023</div>
